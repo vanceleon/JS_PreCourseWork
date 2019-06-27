@@ -89,25 +89,13 @@ const roundedToTenNumbers = numbers.map((number) => {
 //             For example: 'cattywampus', 'snickersnee', null, etc. 
 
 const wordsWithS = words.map((word) => {
-  const allWords = word.split('');
-  // // console.log(splitWords)
-  // const wordLength = allWords.length - 1;
-  // // console.log(splitWords)
-  // let wordContainsS = [];
-  for (let i = 0; i < word.length; i++) {
-    console.log(word[word.length - 1]);
-    if (word[i] === 's') {
-      console.log('true');
-    }
-    // if(allWords[i] === 's' || allWords[i] === 'S'){
-    //   console.log(allWords.join(''))
-    //   return allWords.join('');
-    // }else {
-    //   return null;
-    // }
+  if (word.includes('s' || 'S')) {
+    return word;  
+  }else {
+    return null;
   }
 });
-console.log(wordsWithS)
+// console.log(wordsWithS)
 // // Stretch Questions:
 // // The stretch question will use the array method reduce, which was only briefly reviewed 
 // // in the lecture. Refer to online documentation for more information on reduce. 
