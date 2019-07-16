@@ -12,7 +12,7 @@ const uniqueString = (str) => {
     return true;
 }
 uniqueString('Vance');
-
+    
 
 // whitespace
 // special char
